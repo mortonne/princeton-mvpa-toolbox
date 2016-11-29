@@ -52,7 +52,10 @@ myaddpath('netlab');
 
 % nested wrapper for adding relative paths
 function myaddpath(p)
-  addpath([rootdir '/' p]);
+  d = fullfile(rootdir, p);
+  if exist(d, 'dir')
+    addpath(d);
+  end
 end
 
 end
