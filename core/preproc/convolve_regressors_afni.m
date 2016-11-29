@@ -240,7 +240,7 @@ function [wavexec input1d output1d execout] = call_waver(currun,curcond,condvec,
 condvec = condvec';
 
 % isrow: 0 for column, 1 for row, -1 for matrix
-if isrow(condvec)~=0
+if afni_isrow(condvec)~=0
   error('Not a column vector');
 end
 

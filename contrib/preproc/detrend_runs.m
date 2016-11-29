@@ -102,7 +102,7 @@ if length(find(sel==0))
   error('Your runs vector contains zeros');
 end
 
-if ~isrow(sel)
+if ~afni_isrow(sel)
   error('Your runs vector should be a row vector');
 end
 

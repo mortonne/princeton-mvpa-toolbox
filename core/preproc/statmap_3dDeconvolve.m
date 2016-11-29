@@ -399,7 +399,7 @@ if size(regs,2) ~= size(sel,2)
   error('Different nTRs in regs and selector');
 end
 
-if ~isrow(sel)
+if ~afni_isrow(sel)
   error('Your selector needs to be a row vector');
 end
 

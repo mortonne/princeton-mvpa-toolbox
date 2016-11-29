@@ -48,7 +48,7 @@ end
 %   else, it must be a matrix, so default to 1
 if ~exist('dim','var')
   dim = 1;
-  if isrow(x)==1
+  if afni_isrow(x)==1
     dim = 2;
   end
 end

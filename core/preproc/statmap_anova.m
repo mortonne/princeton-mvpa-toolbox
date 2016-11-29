@@ -145,7 +145,7 @@ if size(pat,2) ~= size(sel,2)
   error('Wrong number of timepoints');
 end
 
-if ~isrow(sel)
+if ~afni_isrow(sel)
   error('Your selector needs to be a row vector');
 end
 

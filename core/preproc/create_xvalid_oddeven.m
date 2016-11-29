@@ -131,7 +131,7 @@ end
    error('Your runs vector contains zeros');
  end
 
-if ~isrow(runs)
+if ~afni_isrow(runs)
   error('Your runs vector should be a row vector');
 end
 

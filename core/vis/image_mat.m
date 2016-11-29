@@ -10,7 +10,7 @@ if exist_object(subj,objtype,objname)
   mat = get_mat(subj,objtype,objname);
 elseif exist_group(subj,objtype,objname)
   mat = squeeze(get_group_as_matrix(subj,objtype,objname));
-  if isrow(mat)==0, mat = mat'; end
+  if afni_isrow(mat)==0, mat = mat'; end
 else
   error('No %s object or group called %s',objtype,objname)
 end
