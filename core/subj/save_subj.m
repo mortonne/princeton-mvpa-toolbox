@@ -75,7 +75,7 @@ defaults.overwrite_if_exist = false;
 defaults.append_results = [];
 args = propval(varargin,defaults);
 
-dt = datetime();
+dt = mvpa_datetime();
 
 % For brevity
 fn = args.pathfilestem;

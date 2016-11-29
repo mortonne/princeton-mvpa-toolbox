@@ -16,7 +16,7 @@ function [subj pathfilename] = move_pattern_to_hd(subj,patname,varargin)
 % file. Do not include a file separator at the end
 %
 % Need to figure out a better way to deal with multiple files with
-% the same name than just the datetime(seconds) - should
+% the same name than just the mvpa_datetime(seconds) - should
 % auto-rename - xxx. Also, this shouldn't take in a filename from
 % the user, since it should be invisible to them.
 %
@@ -61,7 +61,7 @@ if exist_objfield(subj,'pattern',patname,'movehd')
   return
 end
 
-dt = datetime(true);
+dt = mvpa_datetime(true);
 
 % Won't overwrite an existing file of same name
 pathfilename = sprintf('%s/%s_%s',args.subdir,patname,dt);

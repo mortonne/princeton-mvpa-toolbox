@@ -84,7 +84,7 @@ return
 
 
     %    im_rawrunnum(nimg) = im_hdr.rawrunnum;
-    %    im_datetime(nimg) = im_hdr.im_datetime;
+    %    im_mvpa_datetime(nimg) = im_hdr.im_datetime;
     %    im_actual_dt(nimg) = im_hdr.im_actual_dt;
     %    im_lastmod(nimg) = im_hdr.im_lastmod;
     %    im_checksum(nimg) = im_hdr.im_checksum;
